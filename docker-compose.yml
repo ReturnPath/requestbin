@@ -1,0 +1,11 @@
+web:
+  build: .
+  ports:
+   - "4000:4000"
+  environment:
+    PORT: 4000
+    SESSION_SECRET_KEY: "b(wEp(myj6Lqwo6d"
+    WORKERS: 1
+    MAX_REQUESTS: 1000
+
+    REALM: local
